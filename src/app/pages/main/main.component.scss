@@ -1,0 +1,375 @@
+.header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 5;
+
+    a{
+        text-decoration: none;
+        color: white;
+        height: 100%;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+
+    a:hover, a:active{
+        color: orange;
+    }
+
+    a:hover:after, a:active:after{
+        content: "";
+        position: absolute;
+        top: 65px;
+        width: 90px;
+        height: 0;
+        border-style: solid;
+        border-color: orange transparent transparent transparent;
+        border-width: 5px 0px 0px 0px;
+    }
+
+}
+
+
+.home{
+    padding: 90px 0px 20px 0px;
+    width: 100%;
+    .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        left: 0;
+        h1{
+            padding-top: 10px !important;
+            font-weight: 200;
+            color: black;
+        }
+
+        h2{
+            color: black;
+            padding-top: 5px !important;
+            font-weight: 500;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .foto{
+            margin-top: 15px;
+            height: 130px;
+            width: 130px;
+            border-radius: 100%;
+            background-color: white;
+            img{
+                height: 130px;
+                width: 130px; 
+                object-fit: cover;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    .orange-div{
+        height: 230px;
+        width: 100%;
+        background-color: orange;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.home-body{
+    div{
+        width: 100%;
+        margin-top: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .title{
+            text-align: center;
+            margin-top: 0 !important;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            width: 80%;
+            text-align: center;
+            overflow-wrap: break-word;
+        }
+
+        .icons{
+
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            justify-content: space-between;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 30%;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.title{
+    padding-top: 10px !important;
+    width: 100%;
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title:after{
+    content: "";
+    position: absolute;
+    top: 65px;
+    width: 200px;
+    height: 0;
+    border-style: solid;
+    border-color: orange transparent transparent transparent;
+    border-width: 5px 0px 0px 0px;
+}
+
+.skills{
+    padding-top: 90px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+
+            font-weight: 500;
+            font-size: 15px;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            img{
+                height: 100px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.projects{
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    div{
+        .main-project{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 100px;
+            h2{
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                font-size: 15px;
+            }
+            p{
+                text-align: center;
+                width: 80%;
+            }
+            .routes{
+                width: 80%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                align-items: center;
+
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    a{
+                        margin-bottom: 5px;
+                        text-decoration: none;
+                        color: orange;
+                    }
+                }
+
+                .comfeco-logo{
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    img{
+                        cursor: pointer;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 100%;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+
+        .project-grid{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 500px;
+            width: 100%;
+                .project{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 100px;
+                    }
+                    a{
+                        margin-bottom: 5px;
+                        text-decoration: none;
+                        color: orange;
+                    }
+                    .tools{
+                        margin-top: 10px;
+                        font-size: 13px;
+                        span{
+                            padding: 2px 4px 2px 4px;
+                            margin: 2px;
+                            border-radius: 15%;
+                        }
+                    }
+                }
+            
+        }
+    }
+
+}
+
+.about{
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    .about-content{
+        margin-top: 50px;
+        width: 80%;
+        p{
+            margin-bottom: 20px;
+            a{
+                margin-bottom: 5px;
+                text-decoration: none;
+                color: orange;
+            }
+        }
+    }
+}
+
+.p-align{
+    margin: 0; 
+    text-align: center;
+}
+
+.custom-title{
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+}
+
+.custom-desc{
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+}
+
+
+@media (min-width: 992px) { 
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a a a"
+                             "b c d";
+
+        .title{
+            grid-area: a;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            margin-top: 0 !important;
+            div{
+
+            }
+        }
+    }
+
+    .home-body{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            width: 400px
+        };
+    }
+
+    .custom-desc{
+        width: 40%;
+    }
+
+    .projects{
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .main-project{
+                width: 40%;
+            }
+            .project-grid{
+                width: 40%;
+            }
+        }
+    }
+
+    .about{
+        .about-content{
+            width: 40%;
+        }
+    }
+
+ }

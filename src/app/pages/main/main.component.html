@@ -1,0 +1,171 @@
+<nav class="header bg-dark">
+        <a (click)="scroll('home')"
+            tabindex="1">
+            <div class="option">
+                <h3>Home</h3>
+            </div>
+        </a>
+        <a (click)="scroll('skills')"
+            tabindex="2">
+            <div class="option">
+                <h3>Skills</h3>
+            </div>
+        </a>
+        <a (click)="scroll('projects')"
+            tabindex="3">
+            <div class="option">
+                <h3>Projects</h3>
+            </div>
+        </a>
+        <a (click)="scroll('about')"
+            tabindex="4">
+            <div class="option">
+                <h3>About</h3>
+            </div>
+        </a>
+</nav>
+<div class="container">
+
+    <div class="home" id="home" #home>
+
+        <div class="head">
+            <h1> Daniel Cerón </h1>
+            <h2>ANGULAR ORIENTED FRONTEND DEVELOPER</h2>
+            <div class="foto">
+                <img src="https://misanimales.com/wp-content/uploads/2018/05/mono-capuchino-de-cabeza-dura.jpg">
+            </div>
+        </div>
+        <div class="orange-div"></div>
+
+
+    </div>
+
+    <div class="home-body" id="home-body">
+        <div>
+            <p>
+                Welcome to my portfolio!
+            </p>
+            <p>
+                I'm a fan of frontend frameworks specially from Angular, I'm working on my UI design and mobile development skills.
+            </p>
+            <div class="icons">
+                <a href="https://dribbble.com/waspv2"
+                   target="_blank">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="https://github.com/waspv22"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dpc150898"
+                   target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="skills" id="skills" #skills>
+        <h1 class="title"> My skills </h1>
+        <div style="margin-top: 50px;">
+            <h2>TRAINING</h2>
+            <div>
+                <img src="https://raw.githubusercontent.com/kristerkari/react-native-svg-transformer/master/images/react-native-logo.png">
+                <img src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png">
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <h2>WORKING WITH</h2>
+            <div>
+                <img src="https://img.icons8.com/color/452/microsoft-sql-server.png">
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <h2>USING ON PERSONAL PROJECTS</h2>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects" #projects>
+        <h1 class="title"> Projects </h1>
+        <div style="margin-top: 50px; width: 100%;">
+            <div class="main-project">
+                <h2>MY FAVORITE PROJECT</h2>
+                <p>Comunity Fest And Code organized an event for frontend developers, my team was conformed randomly with people all around the world, we won 2nd place from this event being reviewed by Huawei representants.</p>
+                <div class="routes">
+                    <div class="links">
+                        <a target="_blank" href="https://github.com/Comunidad-de-Programadores/Team-Angular-12-Comfeco-Frontend">View code</a>
+                        <a target="_blank" href="https://comfecopriv.web.app/auth/registro">Live version</a>
+                        <a target="_blank" href="https://appgallery.cloud.huawei.com/ag/n/app/C104032789?locale=es_US&source=appshare&subsource=C104032789&shareTo=org.telegram.messenger&shareFrom=appmarket">Huawei Quickapp</a>
+                        <a target="_blank" href="https://www.comfeco.com/">Official event site</a>
+                    </div>
+                    
+                    <div class="comfeco-logo">
+                        <img alt="comfeco logo" src="https://www.comfeco.com/icons/code-icon.svg">
+                    </div>
+                </div>
+            </div>
+            <h2 class="custom-title">OTHER PROJECTS</h2>
+            <div class="custom-desc">
+                <p class="p-align">
+                    These projects where made on personal and professional context,
+                            Actually I work with php, sql, html, and css, but I keep learning and using different technologies on personal projects such as Angular and React Native
+                </p>
+            </div>
+            <div class="project-grid">
+                <div class="project">
+                    <p class="p-align">TaskPill</p>
+                    <img src="../../../assets/taskpill.svg">
+                    <a target="_blank" href="https://github.com/waspv22/todoList">view code</a>
+                    <p class="p-align">To-Do list web app</p>
+                    <div class="tools">
+                        <span class="bg-red">angular</span>
+                        <span class="bg-green">node</span>
+                        <span class="bg-pink">scss</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <p class="p-align">Call Center apps</p>
+                    <img src="../../../assets/dsilogo.jpg">
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1ORAvXEvzfkaC_s8HAlXxcCQuZNxzxAAy?usp=sharing">view images</a>
+                    <p class="p-align">Php with sql apps</p>
+                    <div class="tools">
+                        <span class="bg-blue">php</span>
+                        <span class="bg-gray">sql</span>
+                        <span class="bg-orange">html</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <p class="p-align">Freelance Project</p>
+                    <img src="https://grupoantartida.com/wp-content/uploads/2021/02/cropped-favicon.png">
+                    <a target="_blank" href="https://grupoantartida.com/">live version</a>
+                    <p class="p-align">Grupo Antártida</p>
+                    <div class="tools">
+                        <span class="bg-blue">wordpress</span>
+                        <span class="bg-red">angular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="about" id="about" #about>
+        <h1 class="title"> About </h1>
+        <div class="about-content">
+            <p class="p-align">
+               A little about me: My name is Daniel Pérez Cerón, I use my second last name since is less commmon in México, I'm actually frontend developer learning react native, and also practicing my english skills.
+            </p>
+            <p class="p-align">
+               Teamwork is one thing that I appreciate the most, it mades things easier and you can learn too much things from your teammates, I learned that the empirical way from some projects I were involved.
+            </p>
+            <p class="p-align">
+                Some of my hobbies and interest are: musical instruments, programming, mobile development, cryptocurrencies, videogames, chess and one of my favorites is taking courses about things I'm interested to learn. 
+            </p>
+            <p class="p-align">
+                Feel free to contact me: <a href="mailto:daniel@devceron.tech">daniel@devceron.tech</a>
+            </p>
+        </div>
+    </div>
+</div>

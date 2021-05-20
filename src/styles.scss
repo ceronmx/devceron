@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;700&display=swap');
+
+$dark-background-color: #202020;
+$darker-background-color: #181818;
+$nunito-font: 'Recursive', sans-serif;
+
+:root{
+    scroll-behavior: smooth ;
+}
+
+body, html{
+    background-color: $darker-background-color;
+    color: white;
+    font-family: $nunito-font;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bg-dark{
+    background-color: $dark-background-color;
+}
+
+.bg-darker{
+    background-color: $darker-background-color;
+}
+
+.icon50{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-pink{
+    background-color: plum;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-orange{
+    background-color: orangered;
+}
+
+.bg-gray{
+    background-color: grey;
+}
